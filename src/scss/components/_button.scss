@@ -1,1 +1,64 @@
-// button.scss
+@use "./../utils" as *;
+
+.button{
+  border: 0;
+  background: transparent;
+  @include paddingX(16px);
+  font-size: rem(14px);
+  border-radius: rem(4px);
+
+
+  &--fill{
+    background: $brown;
+    color: $white;
+  }
+
+  &--outline{
+    color: $brown;
+    border: 1px solid currentColor;
+  }
+}
+
+//햄버거 버튼
+.button--burger{
+  @include desktop{
+    display: none;
+  }
+
+  @include mobile{
+
+      width: rem(36px);
+      height: rem(36px);
+      border: 0;
+      background: blue;
+      padding: 0;
+      @include pos;
+      top: rem(65px);
+      right: rem(24px);
+
+      &BarTop, &BarMiddle , &BarBottom{
+        display: block;
+        background: $white;
+        width: 100%;
+        height: 20%;
+        border-radius: rem(10px);
+        left: 0;
+      }
+
+      &BarTop{
+        @include posLeftTop;
+      }
+
+      &BarMiddle{
+        @include posCenterY;
+      }
+
+      &BarBottom{
+        @include posBottomY;
+      }
+
+
+
+    
+  }
+}
