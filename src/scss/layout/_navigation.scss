@@ -2,5 +2,46 @@
 
 //메인 네비게이션
 .menu{
-  background: pink;
+  &__link{
+    display: block;
+    @include padding(16PX)
+  }
+  
+  @include desktop {
+    background: $brown;
+    
+    @at-root .menu__list{
+      @include containerMax;
+      @include paddingX(4PX);
+      @include paddingY(16PX);
+      // padding: 16px 20px;
+      color: $white;
+      font-size: rem(18px);
+      font-weight: 700;
+      @include flexbox($justify: space-between);
+    }
+  }
+
+  @include mobile {
+    @at-root .is--active &__list {
+      transform: none;
+    }
+
+    &__list{
+      background: rgba($khaki, 0.85);
+      width: 70vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      @include padding(20px);
+    }
+
+
+    &__item{
+      border-bottom: 1px solid $black;
+    }
+
+  }
+
 }

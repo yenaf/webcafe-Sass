@@ -39,7 +39,9 @@
 }
 
 @mixin padding($spacing){
-  padding: rem($spacing);
+  // padding: rem($spacing);
+  @include paddingX($spacing);
+  @include paddingY($spacing)
 }
 @mixin paddingX($spacing){
   padding-left: rem($spacing);
