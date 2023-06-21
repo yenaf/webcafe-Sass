@@ -437,7 +437,6 @@ legend {
 }
 
 .appHeader {
-  background: yellow;
   padding: 1rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
@@ -505,6 +504,10 @@ legend {
   .searchForm__group .formInput {
     width: 25rem;
   }
+}
+
+.menu {
+  background: pink;
 }
 
 /*# sourceMappingURL=index.css.map */

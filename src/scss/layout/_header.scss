@@ -2,7 +2,6 @@
 @use "./../components" as*;
 
 .appHeader{
-  background: yellow;
   padding: rem(16px) rem(24px);
   @include flexbox($direction:column);
   gap: rem(16px);
