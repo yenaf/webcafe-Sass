@@ -53,7 +53,7 @@
       }
 
       &__info{
-        @include flexbox($justify:center, $wrap:wrap);
+        @include flexbox($wrap:wrap, $justify:center);
         column-gap: rem(8px);
       }
 
@@ -65,16 +65,39 @@
       
 
     };
+
     .news{
       @at-root .iframeWrapper{
         @include ratio;
       }
 
     };
-    .board{
-      
 
+    .board{
+      position: relative;
+      &__more{
+        @include posRightTop($r:0,$t:0);
+      }
+
+      &__list{
+        @include flexbox(column);
+      }
+      &__item{
+        margin: rem(8px) 0;
+        @include flexbox();
+        column-gap: rem(8px);
+
+      }
+      &__link{
+        flex-grow: 1;
+        @include textOver();
+      }
+
+      &__date{
+        white-space: nowrap;
+      }
     };
+
     .favorite{
 
   

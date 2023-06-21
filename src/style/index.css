@@ -395,8 +395,8 @@ legend {
   font-size: 1.125rem;
   font-weight: 700;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: column center;
+  justify-content: flex-start;
   align-items: stretch;
 }
 .sprite [class*=enTitle] {
@@ -673,6 +673,38 @@ legend {
 
 .iframeWrapper {
   aspect-ratio: 1.7777777778;
+}
+
+.appMain .board {
+  position: relative;
+}
+.appMain .board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.appMain .board__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.appMain .board__item {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 0.5rem;
+}
+.appMain .board__link {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appMain .board__date {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=index.css.map */

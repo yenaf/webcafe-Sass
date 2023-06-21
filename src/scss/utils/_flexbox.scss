@@ -1,8 +1,8 @@
 @mixin flexbox(
   $direction: row,
+  $wrap: nowrap,
   $justify: flex-start,
-  $items: stretch,
-  $wrap: nowrap
+  $items: stretch
 ) {
   display: flex;
   flex-flow: $direction $wrap;

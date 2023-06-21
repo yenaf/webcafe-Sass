@@ -96,3 +96,10 @@
   #{$width}: 100%;
   height: $height;
 }
+
+//말줄임
+@mixin textOver{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
