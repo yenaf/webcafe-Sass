@@ -652,10 +652,27 @@ legend {
     grid-area: twitter;
   }
 }
-@media (min-width: 768px) {
-  .iframeWrapper {
-    aspect-ratio: 1.7777777778;
-  }
+.appMain .book__cover {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.appMain .book__info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 0.5rem;
+}
+.ratingStar {
+  text-align: center;
+  width: 100%;
+  font-size: 2.25rem;
+}
+
+.iframeWrapper {
+  aspect-ratio: 1.7777777778;
 }
 
 /*# sourceMappingURL=index.css.map */

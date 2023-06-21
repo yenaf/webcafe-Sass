@@ -44,16 +44,35 @@
     };
   }
 
-  @include desktop {
+
     .book{
+      &__cover{
+        width: 70%;
+        @include autoMargin;
+        text-align: center;
+      }
+
+      &__info{
+        @include flexbox($justify:center, $wrap:wrap);
+        column-gap: rem(8px);
+      }
+
+      @at-root .ratingStar{
+        text-align: center;
+        width: 100%;
+        font-size: rem(36px);
+      }
+      
 
     };
     .news{
       @at-root .iframeWrapper{
         @include ratio;
       }
+
     };
     .board{
+      
 
     };
     .favorite{
@@ -63,6 +82,6 @@
     .twitter{
 
     };
-  }
+
 
 }
