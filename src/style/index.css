@@ -554,4 +554,49 @@ legend {
   }
 }
 
+.appMain {
+  background: skyblue;
+  display: grid;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .appMain {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .appMain {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    column-gap: 1.25rem;
+    grid-template-areas: "news news news news news news news news news news news news" "book book book book twitter twitter twitter twitter twitter favorite favorite favorite" "book book book book . board board board board board board board";
+  }
+}
+@media (min-width: 768px) {
+  .appMain .book {
+    grid-area: book;
+  }
+  .appMain .news {
+    grid-area: news;
+  }
+  .appMain .board {
+    grid-area: board;
+  }
+  .appMain .favorite {
+    grid-area: favorite;
+  }
+  .appMain .twitter {
+    grid-area: twitter;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
