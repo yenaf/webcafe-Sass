@@ -110,7 +110,7 @@
         &Image{
           @include respons(width, 100%);
           border-radius: 50%;
-          @include fit();
+          // @include fit();
 
         }
       }

@@ -5,7 +5,7 @@
     "watch": "npm run sass -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
-    "build": "postcss src/style/index.css -o src/style/main.css",
+    "build": "postcss src/style/index.css -o src/style/index.css",
     "production": "NODE_ENV=production postcss src/style/index.css -o src/style/index.css"
   },
   "dependencies": {
