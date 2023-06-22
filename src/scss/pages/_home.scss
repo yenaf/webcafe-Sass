@@ -99,10 +99,22 @@
     };
 
     .favorite{
-
-  
+      // background: yellow;
     };
+
     .twitter{
+
+      &__userProfile{
+        @include ratio(1,1);
+
+        &Image{
+          @include respons(width, 100%);
+          border-radius: 50%;
+          @include fit();
+
+        }
+      }
+
 
     };
 
