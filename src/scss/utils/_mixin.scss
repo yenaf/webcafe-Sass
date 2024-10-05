@@ -1,4 +1,5 @@
 @use "./../utils/unit" as *;
+@use "sass:math";
 
 @mixin posCenterY(){
   @include pos;
@@ -88,7 +89,7 @@
 
 //ratio 믹스인
 @mixin ratio($w :16, $h:9) {
-  aspect-ratio: $w / $h;
+  aspect-ratio: math.div($w / $h);
 }
 
 // 반응형 콘텐츠
